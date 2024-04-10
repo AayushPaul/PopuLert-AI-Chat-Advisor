@@ -2,12 +2,14 @@ import { useState } from 'react'
 import './App.css'
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css'
 import { MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator } from '@chatscope/chat-ui-kit-react'
+import { API_KEY } from './config'; // Import the API key from config.js
 
-const API_KEY = '';
+//const API_KEY = '';
 const systemMessage = {
   "role": "system",
   "content": "Give recommendations of where to go to users based on their interests and crowd levels at different places. You should also be able to make schedules for users if the users request schedules."
 }
+
 
 function App() {
   const [messages, setMessages] = useState([
