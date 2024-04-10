@@ -79,7 +79,7 @@ public class OccupancyReporter {
         Scanner scanner = new Scanner(System.in);
         int option = 1;
         while (option != 3) {
-            System.out.println("1. Report occupancy level");
+            System.out.println("\n1. Report occupancy level");
             System.out.println("2. Check occupancy level");
             System.out.println("3. Exit");
             System.out.print("Choose an option: ");
@@ -123,7 +123,6 @@ public class OccupancyReporter {
                     break;
                 default:
                     System.out.println("Invalid option. Please choose again.");
-                    break;
             }
         }
     }
