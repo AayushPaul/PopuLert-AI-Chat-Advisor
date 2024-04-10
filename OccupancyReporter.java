@@ -6,7 +6,8 @@ import java.util.Scanner;
  * This class represents an Occupancy Reporter that allows users to report and check occupancy levels for different locations.
  */
 public class OccupancyReporter {
-    private List<OccupancyReport> occupancyReports; // List to store occupancy reports
+    // List to store occupancy reports
+    private List<OccupancyReport> occupancyReports; 
 
     /**
      * Initializes the OccupancyReporter object.
@@ -26,7 +27,9 @@ public class OccupancyReporter {
      * Ensures: A new OccupancyReport is created and added to the list of occupancy reports.
      */
     public void reportOccupancy(String location, int occupancyLevel) {
-        occupancyReports.add(new OccupancyReport(location, occupancyLevel)); // Create new OccupancyReport and add to list
+        // Create new OccupancyReport and add to list
+        occupancyReports.add(new OccupancyReport(location, occupancyLevel)); 
+        //print the location and level
         System.out.println("Occupancy level for " + location + " reported as: " + occupancyLevel);
     }
 
@@ -86,6 +89,7 @@ public class OccupancyReporter {
             System.out.print("\n\n\n");
             switch (option) {
                 case 1:
+                    //ask for location and occupancy level
                     System.out.print("Enter location: ");
                     String location = scanner.nextLine();
                     System.out.print("Enter occupancy level: ");
@@ -96,11 +100,14 @@ public class OccupancyReporter {
                     System.out.print("\n\n\n");
                     break;
                 case 2:
+                    //ask for location to check
                     System.out.print("Enter location to check occupancy: \n");
                     reporter.getLocations();
                     String locationToCheck = scanner.nextLine();
+                    // set occupency to the last reported level
                     int currentOccupancy = reporter.getOccupancy(locationToCheck);
                     System.out.print("\n");
+                    
                     if (currentOccupancy == 0) {
                         System.out.print("That Location has not been reported yet");
                     } else {
