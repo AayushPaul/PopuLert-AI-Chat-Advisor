@@ -24,3 +24,8 @@ dist-ssr
 *.sw?
 # Ignore config file
 config.js
+
+.DS_Store
+.DS_Store?
+._*
+
