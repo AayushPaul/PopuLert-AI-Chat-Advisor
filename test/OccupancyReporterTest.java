@@ -5,7 +5,7 @@ import java.util.Scanner;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.Test;
 
-public class OccupancyReporterTest {
+public abstract class OccupancyReporterTest {
 
     private OccupancyReporter reporter;
 
@@ -15,18 +15,18 @@ public class OccupancyReporterTest {
     }
 
     @Test
-    public void testReportOccupancy() {
+    public final void testReportOccupancy() {
         reporter.reportOccupancy("Location A", 10);
         assertEquals(10, reporter.getOccupancy("Location A"));
     }
 
     @Test
-    public void testGetOccupancy_LocationNotFound() {
+    public final void testGetOccupancy_LocationNotFound() {
         assertEquals(0, reporter.getOccupancy("Nonexistent Location"));
     }
 
     @Test
-    public void testGetLocations() {
+    public final void testGetLocations() {
         reporter.reportOccupancy("Location A", 10);
         reporter.reportOccupancy("Location B", 15);
         reporter.reportOccupancy("Location C", 20);
