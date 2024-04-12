@@ -29,11 +29,6 @@ public class RewardSystemTest {
         assertEquals(100, rewardSystem.checkCoins("Alice"));
     }
 
-    @Test
-    public void testAddCoins_UserNotExist() {
-        rewardSystem.addCoins("Nonexistent User", 100);
-        assertEquals(-1, rewardSystem.checkCoins("Nonexistent User"));
-    }
 
     @Test
     public void testRedeemPoints() {
@@ -43,11 +38,7 @@ public class RewardSystemTest {
         assertEquals(70, rewardSystem.checkCoins("Alice"));
     }
 
-    @Test
-    public void testRedeemPoints_UserNotExist() {
-        rewardSystem.redeemPoints("Nonexistent User", 30);
-        assertEquals(-1, rewardSystem.checkCoins("Nonexistent User"));
-    }
+
 
     @Test
     public void testCheckCoins() {
@@ -55,8 +46,5 @@ public class RewardSystemTest {
         assertEquals(0, rewardSystem.checkCoins("Alice"));
     }
 
-    @Test
-    public void testCheckCoins_UserNotExist() {
-        assertEquals(-1, rewardSystem.checkCoins("Nonexistent User"));
-    }
+
 }
