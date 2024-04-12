@@ -57,13 +57,14 @@ public class OccupancyReporter {
      * Requires: None
      * Ensures: Prints all the locations in the list of reports.
      */
-    public void getLocations() {
-        // Print all the locations in the list of reports
-        System.out.print("Locations: ");
-        for (OccupancyReport report : occupancyReports) {
-            System.out.print(report.getLocation() + ", ");
-        }
-        System.out.print("\n");
+    public String getLocations() {
+        // return all the locations in the list of reports
+        StringBuilder locations = new StringBuilder("Locations: ");
+    for (OccupancyReport report : occupancyReports) {
+        locations.append(report.getLocation()).append(", ");
+    }
+    locations.append("\n");
+    return locations.toString();
 
     }
 
@@ -102,7 +103,7 @@ public class OccupancyReporter {
                 case 2:
                     //ask for location to check
                     System.out.print("Enter location to check occupancy: \n");
-                    reporter.getLocations();
+                    System.out.print(reporter.getLocations());
                     String locationToCheck = scanner.nextLine();
                     // set occupency to the last reported level
                     int currentOccupancy = reporter.getOccupancy(locationToCheck);
