@@ -92,7 +92,7 @@ public class OccupancyReporter {
                 case 1:
                     //ask for location and occupancy level
                     System.out.print("Enter location: ");
-                    String location = scanner.nextLine();
+                    String location = scanner.nextLine().trim();
                     System.out.print("Enter occupancy level: ");
                     int occupancy = scanner.nextInt();
                     // Buffer since input switches from int to string
@@ -104,7 +104,7 @@ public class OccupancyReporter {
                     //ask for location to check
                     System.out.print("Enter location to check occupancy: \n");
                     System.out.print(reporter.getLocations());
-                    String locationToCheck = scanner.nextLine();
+                    String locationToCheck = scanner.nextLine().trim();
                     // set occupency to the last reported level
                     int currentOccupancy = reporter.getOccupancy(locationToCheck);
                     System.out.print("\n");

@@ -1,32 +1,32 @@
+
+
 import static org.junit.Assert.assertEquals;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import java.util.Scanner;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.junit.Test;
 
-public abstract class OccupancyReporterTest {
+
+
+public  class OccupancyReporterTest {
 
     private OccupancyReporter reporter;
-
-    @BeforeEach
-    public void setUp() {
-        reporter = new OccupancyReporter();
-    }
-
+    // Test to check if the reportOccupancy method correctly reports the occupancy for a given location
     @Test
     public final void testReportOccupancy() {
+        reporter = new OccupancyReporter();
         reporter.reportOccupancy("Location A", 10);
         assertEquals(10, reporter.getOccupancy("Location A"));
     }
 
+    // Test to check if the getOccupancy method returns 0 for a location that does not exist
     @Test
     public final void testGetOccupancy_LocationNotFound() {
+        reporter = new OccupancyReporter();
         assertEquals(0, reporter.getOccupancy("Nonexistent Location"));
     }
-
+    // Test to check if the getLocations method correctly returns all the locations for which occupancy has been reported  
     @Test
     public final void testGetLocations() {
+        reporter = new OccupancyReporter();
         reporter.reportOccupancy("Location A", 10);
         reporter.reportOccupancy("Location B", 15);
         reporter.reportOccupancy("Location C", 20);
@@ -34,5 +34,4 @@ public abstract class OccupancyReporterTest {
         String expectedOutput = "Locations: Location A, Location B, Location C, \n";
         assertEquals(expectedOutput, reporter.getLocations());
     }
-    // Additional test cases can be added for comprehensive testing
 }
