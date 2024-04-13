@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 public class RewardSystem {
     private Map<String, User> users;
@@ -44,27 +45,56 @@ public class RewardSystem {
         }
     }
 
+
+
     public static void main(String[] args) {
         RewardSystem rewardSystem = new RewardSystem();
-    
-        // Add users
-        rewardSystem.addUser("Alice");
-        rewardSystem.addUser("Bob");
-    
-        // Add coins
-        rewardSystem.addCoins("Alice", 100);
-        rewardSystem.addCoins("Bob", 50);
-    
-        // Check coins
-        System.out.println("Alice has " + rewardSystem.checkCoins("Alice") + " coins.");
-        System.out.println("Bob has " + rewardSystem.checkCoins("Bob") + " coins.");
-    
-        // Redeem points
-        rewardSystem.redeemPoints("Alice", 30);
-        rewardSystem.redeemPoints("Bob", 60);
-    
-        // Check coins again
-        System.out.println("Alice has " + rewardSystem.checkCoins("Alice") + " coins.");
-        System.out.println("Bob has " + rewardSystem.checkCoins("Bob") + " coins.");
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            System.out.println("Enter 1 to add a user \n 2 to add coins \n 3 to check coins \n 4 to redeem points \n 0 to exit:");
+            int choice = scanner.nextInt();
+            scanner.nextLine();  // Consume newline left-over
+
+            switch (choice) {
+                case 1:
+                    System.out.println("Enter username:");
+                    String username = scanner.nextLine();
+                    rewardSystem.addUser(username);
+                    break;
+                case 2:
+                    System.out.println("Enter username and coins to add:");
+                    System.out.print("username: ");
+                    String user = scanner.nextLine();
+                    System.out.print("\n");
+                    System.out.print("coins: ");
+                    int coins = scanner.nextInt();
+                    scanner.nextLine();  // Consume newline left-over
+                    rewardSystem.addCoins(user, coins);
+                    break;
+                case 3:
+                    System.out.println("Enter username to check coins:");
+                    String checkUser = scanner.nextLine();
+                    System.out.println(checkUser + " has " + rewardSystem.checkCoins(checkUser) + " coins.");
+                    break;
+                case 4:
+                    System.out.println("Enter username and coins to add:");
+                    System.out.print("username: ");
+                    String name = scanner.nextLine();
+                    System.out.print("\n");
+                    System.out.print("coins: ");
+                    int points = scanner.nextInt();
+                    scanner.nextLine();  // Consume newline left-over
+                    rewardSystem.redeemPoints(name, points);
+                    break;
+                case 0:
+                    System.out.println("Exiting...");
+                    scanner.close();
+                    return;
+                default:
+                    System.out.println("Invalid choice. Please enter a number between 0 and 4.");
+            }
+        }
+
     }
 }
