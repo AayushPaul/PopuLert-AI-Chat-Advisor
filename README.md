@@ -8,6 +8,9 @@
 
     Code:
         The main implementation of PopuLert, written in Java and React JS
+        Implementation of the Reporting System
+        Implementation of the Reward System
+        Implementation of an AI Chatbot
         Unit tests for ensuring code quality and reliability.
 
     UML Diagram:
