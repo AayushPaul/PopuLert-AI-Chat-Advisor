@@ -24,7 +24,7 @@ dist-ssr
 *.sw?
 # Ignore config file
 config.js
-
+# Ignore OS generated files
 .DS_Store
 .DS_Store?
 ._*
