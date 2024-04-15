@@ -23,7 +23,7 @@
         A concise document providing operating instructions for the PopuLert application, ensuring users can effectively interact with it.
 
     Marketing Materials:
-        Flyer: A promotional flyer showcasing the key features and benefits of PopuLert.
+        OromotPional flyers showcasing the key features and benefits of PopuLert.
     
 ## Contact Information
 
