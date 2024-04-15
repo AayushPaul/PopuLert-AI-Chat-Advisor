@@ -7,7 +7,7 @@
 ### PopuLert is an application that aims to evaluate occupancy levels in an establishment to eliminate wasted time and optimize personal schedules.
 
     Code:
-        The main implementation of PopuLert, written in Java and React JS
+        The main implementation of PopuLert, written in Java and Javascript
         Implementation of the Reporting System
         Implementation of the Reward System
         Implementation of an AI Chatbot
@@ -23,7 +23,7 @@
         The screenshot and link to the prototype are included
 
     User Documentation:
-        A concise document providing operating instructions for the PopuLert application, ensuring users can effectively interact with it.
+        A concise document provides operating instructions for the PopuLert application, ensuring users can interact effectively.
 
     Marketing Materials:
         OromotPional flyers showcasing the key features and benefits of PopuLert.
