@@ -1,40 +1,38 @@
 # PopuLert
 
-### Welcome to the repository for PopuLert. This README serves as the landing page, summarizing the project, repository contents, and contact information for the team.
-
 ## Project Summary
 
-### PopuLert is an application that aims to evaluate occupancy levels in an establishment to eliminate wasted time and optimize personal schedules.
+### PopuLert is an application designed to evaluate occupancy levels in establishments, optimizing personal schedules and reducing wasted time. It offers the following components:
 
-    Code:
-        The main implementation of PopuLert, written in Java and Javascript
-        Implementation of the Reporting System
-        Implementation of the Reward System
-        Implementation of an AI Chatbot
-        Unit tests for ensuring code quality and reliability.
+#### Code: 
+- Main implementation in Java and Javascript.
+- Reporting System implementation.
+- Reward System implementation.
+- AI Chatbot implementation.
+- Unit tests ensuring code quality and reliability.
 
-    UML Diagram:
-        Illustrates the interactions between users and the system
-        Provides a structural overview of the system's classes and their relationships.
-        Shows the sequence of interactions between objects in the system.
+#### UML Diagram: 
+- Illustrates user-system interactions.
+- Provides a structural overview of classes and relationships.
+- Demonstrates the sequence of object interactions.
 
-    Figma Prototype:
-        A full working prototype of PopuLert, designed using Figma.
-        The screenshot and link to the prototype are included
+#### Figma Prototype: 
+- Full working prototype designed with Figma.
+- Includes screenshot and prototype link.
 
-    User Documentation:
-        A concise document provides operating instructions for the PopuLert application, ensuring users can interact effectively.
+#### User Documentation: 
+- Concise operating instructions for effective interaction with PopuLert.
 
-    Marketing Materials:
-        Promotional flyers showcasing the key features and benefits of PopuLert.
-    
+#### Marketing Materials: 
+- Promotional flyers showcasing key features and benefits.
+
 ## Contact Information
 
 ### For inquiries or feedback, please feel free to reach out to the project team:
 
-    Abby Theobald - abbytheobald6@gmail.com
-    Allen Thomas - allenthom05@gmail.com
-    Max Muckley - mmuckley@kent.edu
-    Aayush Paul - aayushpaul01@gmail.com
+- Abby Theobald: abbytheobald6@gmail.com
+- Allen Thomas: allenthom05@gmail.com
+- Max Muckley: mmuckley@kent.edu
+- Aayush Paul: aayushpaul01@gmail.com
 
-Thank you for your interest in Populert! We hope you find this repository informative and valuable.
+Thank you for your interest in PopuLert! We hope you find this repository informative and valuable.
